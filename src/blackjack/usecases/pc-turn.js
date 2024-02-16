@@ -12,7 +12,6 @@ import { showCards } from './show-cards';
 export const pcTurn = (deck, playersPoints, playerWins) => {
   if (!playersPoints) throw new Error('playersPoints is necessary');
   if (!deck) throw new Error('deck is necessary');
-  if (!playerWins) throw new Error('playerWins is necessary');
 
   do {
     const card = askCard(deck);
