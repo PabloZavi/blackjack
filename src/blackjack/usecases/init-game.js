@@ -15,7 +15,6 @@ import {
  */
 export const initGame = (numPlayers = 2, tipos, specials) => {
   let deck = createDeck(tipos, specials);
-  console.log({ deck });
   let playersPoints = [];
   for (let i = 0; i < numPlayers; i++) {
     playersPoints.push(0);

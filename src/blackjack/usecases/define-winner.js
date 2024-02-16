@@ -12,5 +12,5 @@ export const defineWinner = (playersPoints) => {
       : (pcPoints <= 21 && pcPoints > playerPoints) || playerPoints > 21
       ? alert('PC Wins')
       : pcPoints === playerPoints && alert('Push');
-  }, 100);
+  }, 1000);
 };
