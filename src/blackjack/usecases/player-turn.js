@@ -12,13 +12,9 @@ import { showCards } from "./show-cards";
  */
 export const playerTurn = (deck, playersPoints, playerWins) => {
   //callback: Función que se manda como argumento
-  console.log({deck})
   const card = askCard(deck);
-  console.log(deck);
-  //console.log({ playersPoints });
   playersPoints[0] = addPoints(playersPoints, 0, card);
   showCards(card, 0);
-//   console.log({deck})
 
   if (playersPoints[0] > 21) {
     btnAskCard.disabled = true;
